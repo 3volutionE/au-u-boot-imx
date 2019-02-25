@@ -187,6 +187,14 @@ config TARGET_MX6SABRESD
 	select DM_THERMAL
 	select BOARD_EARLY_INIT_F
 
+config TARGET_BESTNAVCPU
+	bool "bestnavcpu"
+	select BOARD_LATE_INIT
+	select SUPPORT_SPL
+	select DM
+	select DM_THERMAL
+	select BOARD_EARLY_INIT_F
+
 config TARGET_MX6SLEVK
 	bool "mx6slevk"
 	select SUPPORT_SPL
@@ -388,5 +396,5 @@ source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
-
+source "board/bluechips/bestnavcpu/Kconfig"
 endif

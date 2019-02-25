@@ -1,0 +1,12 @@
+if TARGET_BESTNAVCPU
+
+config SYS_BOARD
+	default "bestnavcpu"
+
+config SYS_VENDOR
+	default "bluechips"
+
+config SYS_CONFIG_NAME
+	default "bestnavcpu"
+
+endif
